@@ -15,7 +15,9 @@ root.resizable(width=False, height=False)
 def qrcode_maker(data):
     code_image = qrcode.make(data)
     code_image.save("QRCode.png")
-    qr_image=ImageTk.PhotoImage(Image.open("QRCode.png"))
+    qr_image=Image.open("QRCode.png")
+    qr_image=qr_image.resize((370, 370))
+    qr_image=ImageTk.PhotoImage(qr_image)
     image_dis.configure(image=qr_image)
     image_dis.image=qr_image
 
