@@ -6,7 +6,7 @@ from tkinter import filedialog
 
 #Screen Setup
 root = tk.Tk()
-root.geometry("500x500")
+root.geometry("370x400")
 root.title("EasyQR")
 root.configure(background="gray")
 root.resizable(width=False, height=False)
