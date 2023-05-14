@@ -29,20 +29,20 @@ def save_qrcode():
     
 #QR Display
 qr_image = ImageTk.PhotoImage(Image.open("DefaultQRCode.png"))
-image_dis = Label(root, image=qr_image)
-image_dis.pack()
+image_dis = Label(root, image=qr_image).grid(row=1, column=1)
+#image_dis.pack()
 
 #Text Entry
-entry = Text(root, height=1, width=100, yscrollcommand=True)
-entry.pack()
+entry = Text(root, height=1, width=100, yscrollcommand=True).grid(row=1, column=1)
+#entry.pack()
 
 #Enter Button
-e_button = Button(root, text="Create", command=lambda: qrcode_maker(entry.get(1.0, "end-1c")))
-e_button.pack()
+e_button = Button(root, text="Create", command=lambda: qrcode_maker(entry.get(1.0, "end-1c"))).grid(row=1, column=1)
+#e_button.pack()
 
 #Save Button
-s_button = Button(root, text="Save", command=save_qrcode)
-s_button.pack()
+s_button = Button(root, text="Save", command=save_qrcode).grid(row=1, column=1)
+#s_button.pack()
 
 
 
