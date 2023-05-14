@@ -33,7 +33,7 @@ image_dis = Label(root, image=qr_image)
 image_dis.pack()
 
 #Text Entry
-entry = Text(root, height=1, width=36, yscrollcommand=True)
+entry = Text(root, height=1, width=100, yscrollcommand=True)
 entry.pack()
 
 #Enter Button
