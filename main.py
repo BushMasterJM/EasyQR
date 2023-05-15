@@ -28,8 +28,8 @@ def save_qrcode(*burn):
     
     
 #QR Display
-qr_image = ImageTk.PhotoImage(Image.open("DefaultQRCode.png").resize((409, 409)))
-image_dis = Label(root, image=qr_image)
+qr_image = ImageTk.PhotoImage(Image.open("DefaultQRCode.png"))
+image_dis = Label(root, image=qr_image).grid(row=0, column=0)
 #image_dis.pack()
 
 #Text Entry
