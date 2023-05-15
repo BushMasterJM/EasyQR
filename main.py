@@ -1,11 +1,12 @@
 import qrcode
-import tkinter as tk
+# import tkinter as tk_
+import ttkbootstrap as tk
 from tkinter import *
 from PIL import ImageTk, Image
 from tkinter import filedialog
 
 #Screen Setup
-root = tk.Tk()
+root = tk.Window()
 root.geometry("420x560")
 root.title("EasyQR")
 root.configure(background="gray")
