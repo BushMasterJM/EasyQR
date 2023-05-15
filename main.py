@@ -33,7 +33,7 @@ image_dis = Label(root, image=qr_image)
 
 #Text Entry
 # entry = Text(root, height=5, width=1, yscrollcommand=True)
-entry = Entry(root)
+entry = Entry(root, bootstyle="success")
 def enter(event):
     qrcode_maker(list(entry.get()))
     s_button.focus()
@@ -41,10 +41,10 @@ entry.bind("<Return>", enter)
 #entry.pack()
 entry.get()
 #Enter Button
-e_button = Button(root, text="Create", command=lambda: qrcode_maker(entry.get()), bootstyle="outline")
+e_button = Button(root, text="Create", command=lambda: qrcode_maker(entry.get()), bootstyle="success")
 
 #Save Button
-s_button = Button(root, text="Save", command=save_qrcode, bootstyle='outline')
+s_button = Button(root, text="Save", command=save_qrcode, bootstyle='success')
 s_button.bind("<Return>", save_qrcode)
 
 #Display stuff
