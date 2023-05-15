@@ -6,10 +6,10 @@ from PIL import ImageTk, Image
 from tkinter import filedialog
 
 #Screen Setup
-root = tk.Window()
+root = tk.Window(themename="darkly")
 # root.geometry("420x560")
 root.title("EasyQR")
-root.configure(background="gray")
+#root.configure(background="gray")
 root.resizable(width=False, height=False)
 
 def qrcode_maker(data):
