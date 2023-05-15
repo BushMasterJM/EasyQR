@@ -12,7 +12,6 @@ root.title("EasyQR")
 root.configure(background="gray")
 root.resizable(width=False, height=False)
 
-
 def qrcode_maker(data):
     code_image = qrcode.make(data)
     code_image.save("QRCode.png")
