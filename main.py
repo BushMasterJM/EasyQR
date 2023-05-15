@@ -6,7 +6,7 @@ from PIL import ImageTk, Image
 from tkinter import filedialog
 
 #Screen Setup
-root = tk.Window(themename="darkly")
+root = tk.Window(themename="solar")
 # root.geometry("420x560")
 root.title("EasyQR")
 #root.configure(background="gray")
