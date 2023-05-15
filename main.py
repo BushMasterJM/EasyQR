@@ -1,15 +1,14 @@
 import qrcode
 # import tkinter as tk_
-import ttkbootstrap as tk
-from tkinter import *
+# import ttkbootstrap as tk
+from ttkbootstrap import *
 from PIL import ImageTk, Image
 from tkinter import filedialog
 
 #Screen Setup
-root = tk.Window()
+root = Window(themename="solar")
 # root.geometry("420x560")
 root.title("EasyQR")
-root.configure(background="gray")
 root.resizable(width=False, height=False)
 
 def qrcode_maker(data):
@@ -42,10 +41,10 @@ entry.bind("<Return>", enter)
 #entry.pack()
 entry.get()
 #Enter Button
-e_button = Button(root, text="Create", command=lambda: qrcode_maker(entry.get()))
+e_button = Button(root, text="Create", command=lambda: qrcode_maker(entry.get()), bootstyle="outline")
 
 #Save Button
-s_button = Button(root, text="Save", command=save_qrcode)
+s_button = Button(root, text="Save", command=save_qrcode, bootstyle='outline')
 s_button.bind("<Return>", save_qrcode)
 
 #Display stuff
