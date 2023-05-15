@@ -9,6 +9,8 @@ from tkinter import filedialog
 root = Window(themename="solar")
 # root.geometry("420x560")
 root.title("EasyQR")
+icon = PhotoImage(file = 'icon.png')
+root.iconphoto(False, icon)
 root.resizable(width=False, height=False)
 
 def qrcode_maker(data):
